@@ -6,13 +6,15 @@ public class Inek {
     private String name;
 
     public Inek() {
-        toplamSayi++;
         name = "inek + inek sayisi";
     }
     public Inek(String name) {
-        toplamSayi++;
         this.name = name;
 
+    }
+
+    {
+        toplamSayi++;
     }
 
     @Override

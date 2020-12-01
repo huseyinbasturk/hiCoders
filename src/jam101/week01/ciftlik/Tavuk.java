@@ -6,14 +6,15 @@ public class Tavuk {
     private String name;
 
     public Tavuk() {
-        toplamSayi++;
         name = "tavuk + tavuk sayisi";
     }
     public Tavuk(String name) {
-        toplamSayi++;
         this.name = name;
     }
 
+    {
+        toplamSayi++;
+    }
     @Override
     public String toString() {
         return "Tavuk  { name='" + name + '\'' + '}';
