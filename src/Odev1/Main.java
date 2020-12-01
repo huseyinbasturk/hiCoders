@@ -25,7 +25,6 @@ public class Main {
         System.out.println("Ciftlikte bulunan hayvan sayisi: " + Ciftlik.toplamHayvan(ciftlik));
         System.out.println("Toplam bacak sayisi: " + Ciftlik.toplamBacak(ciftlik));
 
-
     }
 
 }
