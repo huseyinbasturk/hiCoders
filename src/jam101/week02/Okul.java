@@ -8,10 +8,23 @@ public class Okul {
     static ArrayList<Ogrenci> Liste = new ArrayList<>();
     static ArrayList<Ogrenci> BasariliOgrenciler = new ArrayList<>();
     static ArrayList<Ogrenci> KalanOgrenciler = new ArrayList<>();;
-
+    static Scanner sc = new Scanner(System.in);
+    static Random r = new Random();
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Random r = new Random();
+        init();
+        printList(Liste);
+        System.out.println("====================");
+        calculateResult();
+        printList(BasariliOgrenciler);
+        System.out.println("=======================");
+        printList(KalanOgrenciler);
+        System.out.println("=====================");
+        findTheBest();
+        findTheWorst();
+
+    }
+
+    public static void init() {
 
         int size = r.nextInt(51); //kodu kontrol etmek icin siniri 51'den tek basamakli bir sayiya dusurmek gerekir.
         System.out.println("Sinif mevcudu: " + size);
@@ -27,18 +40,8 @@ public class Okul {
             System.out.print("Lutfen " + name + " adli ogrencinin Almanca notunu giriniz: ");
             ogrenci.setDeutschScore(sc.nextInt());
             sc.nextLine();
+
         }
-
-        printList(Liste);
-        System.out.println("====================");
-        calculateResult();
-        printList(BasariliOgrenciler);
-        System.out.println("=======================");
-        printList(KalanOgrenciler);
-        System.out.println("=====================");
-        findTheBest();
-        findTheWorst();
-
     }
 
     public static void printList(ArrayList list) {
