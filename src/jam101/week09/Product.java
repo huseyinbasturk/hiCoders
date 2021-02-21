@@ -1,6 +1,7 @@
 package jam101.week09;
 
 import java.time.LocalDate;
+import java.util.Collection;
 
 public class Product {
 
@@ -43,4 +44,6 @@ public class Product {
     public void setStockVolume(int stockVolume) {
         this.stockVolume = stockVolume;
     }
+
+
 }
